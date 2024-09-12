@@ -1,0 +1,64 @@
+2024-08-20 11:40:03,225 ERROR: Error occurred: bot not existing [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-20 12:24:21,786 ERROR: Error occurred: (MySQLdb.ProgrammingError) (1146, "Table 'tech_bot.bot_event_log' doesn't exist")
+[SQL: SELECT bot_event_log.id AS bot_event_log_id, bot_event_log.bot_id AS bot_event_log_bot_id, bot_event_log.event_id AS bot_event_log_event_id, bot_event_log.created_on AS bot_event_log_created_on, bot_event_log.updated_on AS bot_event_log_updated_on 
+FROM bot_event_log 
+WHERE bot_event_log.bot_id = %s 
+ LIMIT %s]
+[parameters: (5, 1)]
+(Background on this error at: https://sqlalche.me/e/20/f405) [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-20 12:24:43,169 ERROR: Error occurred: 'NoneType' object is not iterable [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-20 12:28:35,333 ERROR: Error occurred: 'NoneType' object is not iterable [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-20 12:29:24,607 ERROR: Error occurred: local variable 'event_ids' referenced before assignment [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-20 12:29:37,130 ERROR: Error occurred: 'NoneType' object is not iterable [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-20 12:32:58,898 ERROR: Error occurred: 'BotEventLog' object has no attribute 'group_id' [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-20 12:33:18,896 ERROR: Error occurred: 'BotEventLog' object is not iterable [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-20 12:54:00,604 ERROR: Error occurred: name 'jfn' is not defined [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-21 11:27:25,830 ERROR: Error occurred: (MySQLdb.ProgrammingError) (1146, "Table 'tech_bot.bots' doesn't exist")
+[SQL: SELECT bots.id AS bots_id, bots.phone_id AS bots_phone_id, bots.bot_username AS bots_bot_username, bots.bot_name AS bots_bot_name, bots.bot_status AS bots_bot_status, bots.bot_description AS bots_bot_description, bots.bot_token AS bots_bot_token, bots.bot_approval_status AS bots_bot_approval_status, bots.created_on AS bots_created_on, bots.updated_on AS bots_updated_on 
+FROM bots 
+WHERE bots.id = %s]
+[parameters: (7,)]
+(Background on this error at: https://sqlalche.me/e/20/f405) [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-21 14:02:24,718 ERROR: Error occurred: the JSON object must be str, bytes or bytearray, not NoneType [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-21 14:02:24,719 ERROR: Error occurred: the JSON object must be str, bytes or bytearray, not NoneType [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-21 14:02:51,574 ERROR: Error occurred: the JSON object must be str, bytes or bytearray, not NoneType [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-21 14:02:51,575 ERROR: Error occurred: the JSON object must be str, bytes or bytearray, not NoneType [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-21 14:03:02,374 ERROR: Error occurred: the JSON object must be str, bytes or bytearray, not NoneType [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-21 14:03:02,375 ERROR: Error occurred: the JSON object must be str, bytes or bytearray, not NoneType [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-21 14:03:34,646 ERROR: Error occurred: the JSON object must be str, bytes or bytearray, not NoneType [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-21 14:03:34,647 ERROR: Error occurred: the JSON object must be str, bytes or bytearray, not NoneType [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-21 14:03:52,193 ERROR: Error occurred: the JSON object must be str, bytes or bytearray, not NoneType [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-21 14:03:52,195 ERROR: Error occurred: the JSON object must be str, bytes or bytearray, not NoneType [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-21 14:04:14,693 ERROR: Error occurred: the JSON object must be str, bytes or bytearray, not NoneType [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-21 14:04:14,694 ERROR: Error occurred: the JSON object must be str, bytes or bytearray, not NoneType [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-21 14:04:49,631 ERROR: Error occurred: the JSON object must be str, bytes or bytearray, not NoneType [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-21 14:04:49,632 ERROR: Error occurred: the JSON object must be str, bytes or bytearray, not NoneType [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-21 14:05:19,159 ERROR: Error occurred: the JSON object must be str, bytes or bytearray, not NoneType [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-21 14:05:19,160 ERROR: Error occurred: the JSON object must be str, bytes or bytearray, not NoneType [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-22 14:37:42,801 ERROR: Error occurred: Group name already exist [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-22 14:40:49,807 ERROR: Error occurred: (MySQLdb.OperationalError) (1048, "Column 'MID_PID' cannot be null")
+[SQL: INSERT INTO merchant (merchant_name, `MID_PID`, secret_key, token, created_on, updated_on) VALUES (%s, %s, %s, %s, %s, %s)]
+[parameters: ('merchant1', None, 'Secretrkey', None, datetime.datetime(2024, 8, 22, 9, 9, 39, 253741, tzinfo=<UTC>), datetime.datetime(2024, 8, 22, 9, 9, 39, 253880, tzinfo=<UTC>))]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-22 14:42:12,779 ERROR: Error occurred: Merchant name already exist [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-23 11:10:44,507 ERROR: SQLAlchemy error occurred: (MySQLdb.OperationalError) (1052, "Column 'id' in order clause is ambiguous")
+[SQL: SELECT bots.id AS bots_id, bots.phone_id AS bots_phone_id, bots.bot_username AS bots_bot_username, bots.bot_name AS bots_bot_name, bots.bot_status AS bots_bot_status, bots.bot_description AS bots_bot_description, bots.bot_token AS bots_bot_token, bots.bot_approval_status AS bots_bot_approval_status, bots.created_on AS bots_created_on, bots.updated_on AS bots_updated_on 
+FROM bots INNER JOIN group_bot_log ON group_bot_log.bot_id = bots.id INNER JOIN `group` ON `group`.id = group_bot_log.group_id 
+WHERE `group`.id IN (%s) ORDER BY id desc 
+ LIMIT %s, %s]
+[parameters: ('5', 0, 10)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:60]
+2024-08-23 11:12:06,143 ERROR: SQLAlchemy error occurred: (MySQLdb.OperationalError) (1052, "Column 'id' in order clause is ambiguous")
+[SQL: SELECT bots.id AS bots_id, bots.phone_id AS bots_phone_id, bots.bot_username AS bots_bot_username, bots.bot_name AS bots_bot_name, bots.bot_status AS bots_bot_status, bots.bot_description AS bots_bot_description, bots.bot_token AS bots_bot_token, bots.bot_approval_status AS bots_bot_approval_status, bots.created_on AS bots_created_on, bots.updated_on AS bots_updated_on 
+FROM bots INNER JOIN group_bot_log ON group_bot_log.bot_id = bots.id INNER JOIN `group` ON `group`.id = group_bot_log.group_id 
+WHERE `group`.id IN (%s) ORDER BY id desc 
+ LIMIT %s, %s]
+[parameters: (5, 0, 10)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:60]
+2024-08-23 11:12:18,777 ERROR: SQLAlchemy error occurred: (MySQLdb.OperationalError) (1052, "Column 'id' in order clause is ambiguous")
+[SQL: SELECT bots.id AS bots_id, bots.phone_id AS bots_phone_id, bots.bot_username AS bots_bot_username, bots.bot_name AS bots_bot_name, bots.bot_status AS bots_bot_status, bots.bot_description AS bots_bot_description, bots.bot_token AS bots_bot_token, bots.bot_approval_status AS bots_bot_approval_status, bots.created_on AS bots_created_on, bots.updated_on AS bots_updated_on 
+FROM bots INNER JOIN group_bot_log ON group_bot_log.bot_id = bots.id INNER JOIN `group` ON `group`.id = group_bot_log.group_id 
+WHERE `group`.id IN (%s) ORDER BY id desc 
+ LIMIT %s, %s]
+[parameters: (5, 0, 10)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:60]

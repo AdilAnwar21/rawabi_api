@@ -1,0 +1,67 @@
+2024-08-23 11:15:03,872 ERROR: SQLAlchemy error occurred: (MySQLdb.OperationalError) (1052, "Column 'id' in order clause is ambiguous")
+[SQL: SELECT bots.id AS bots_id, bots.phone_id AS bots_phone_id, bots.bot_username AS bots_bot_username, bots.bot_name AS bots_bot_name, bots.bot_status AS bots_bot_status, bots.bot_description AS bots_bot_description, bots.bot_token AS bots_bot_token, bots.bot_approval_status AS bots_bot_approval_status, bots.created_on AS bots_created_on, bots.updated_on AS bots_updated_on 
+FROM bots INNER JOIN group_bot_log ON group_bot_log.bot_id = bots.id INNER JOIN `group` ON `group`.id = group_bot_log.group_id 
+WHERE `group`.id IN (%s) ORDER BY id desc 
+ LIMIT %s, %s]
+[parameters: (5, 0, 10)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:60]
+2024-08-23 11:16:27,149 ERROR: SQLAlchemy error occurred: (MySQLdb.OperationalError) (1052, "Column 'id' in order clause is ambiguous")
+[SQL: SELECT bots.id AS bots_id, bots.phone_id AS bots_phone_id, bots.bot_username AS bots_bot_username, bots.bot_name AS bots_bot_name, bots.bot_status AS bots_bot_status, bots.bot_description AS bots_bot_description, bots.bot_token AS bots_bot_token, bots.bot_approval_status AS bots_bot_approval_status, bots.created_on AS bots_created_on, bots.updated_on AS bots_updated_on 
+FROM bots INNER JOIN group_bot_log ON group_bot_log.bot_id = bots.id 
+WHERE group_bot_log.group_id IN (%s) ORDER BY id desc 
+ LIMIT %s, %s]
+[parameters: (5, 0, 10)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:60]
+2024-08-23 11:17:23,774 ERROR: SQLAlchemy error occurred: (MySQLdb.OperationalError) (1052, "Column 'id' in order clause is ambiguous")
+[SQL: SELECT bots.id AS bots_id, bots.phone_id AS bots_phone_id, bots.bot_username AS bots_bot_username, bots.bot_name AS bots_bot_name, bots.bot_status AS bots_bot_status, bots.bot_description AS bots_bot_description, bots.bot_token AS bots_bot_token, bots.bot_approval_status AS bots_bot_approval_status, bots.created_on AS bots_created_on, bots.updated_on AS bots_updated_on 
+FROM bots INNER JOIN group_bot_log ON group_bot_log.bot_id = bots.id 
+WHERE group_bot_log.group_id IN (%s) ORDER BY id desc 
+ LIMIT %s, %s]
+[parameters: (5, 0, 10)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:60]
+2024-08-26 10:03:57,521 ERROR: Error occurred: object of type 'NoneType' has no len() [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-26 10:04:03,260 ERROR: Error occurred: object of type 'NoneType' has no len() [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-26 10:06:25,242 ERROR: Error occurred: otp incorrect [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-26 10:06:44,451 ERROR: Error occurred: otp incorrect [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-26 10:06:48,113 ERROR: Error occurred: otp incorrect [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-26 10:09:01,067 ERROR: Error occurred: otp incorrect [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-26 10:09:40,759 ERROR: Error occurred: otp incorrect [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-26 10:16:34,156 ERROR: Error occurred: Class 'builtins.list' is not mapped [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-26 10:17:06,215 ERROR: Error occurred: Class 'builtins.list' is not mapped [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-26 10:17:49,588 ERROR: Error occurred: Class 'builtins.list' is not mapped [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-26 10:20:53,682 ERROR: Error occurred: Merchant Already Mapped [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-26 10:23:04,423 ERROR: Error occurred: Object of type Response is not JSON serializable [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-26 10:23:42,912 ERROR: Error occurred: Expecting value: line 1 column 1 (char 0) [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-26 10:24:21,038 ERROR: Error occurred: Expecting value: line 1 column 1 (char 0) [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-26 10:25:57,745 ERROR: Error occurred: Expecting value: line 1 column 1 (char 0) [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-26 10:26:34,477 ERROR: Error occurred: Expecting value: line 1 column 1 (char 0) [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-26 12:13:03,810 ERROR: Error occurred: otp incorrect [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-26 12:13:10,625 ERROR: Error occurred: otp incorrect [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-26 12:17:28,512 ERROR: Error occurred: otp incorrect [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-26 12:18:02,914 ERROR: Error occurred: otp incorrect [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-26 12:20:02,457 ERROR: Error occurred: No Merchants To Show [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-26 12:35:55,626 ERROR: Error occurred: No Merchants To Show [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-26 12:36:02,557 ERROR: Error occurred: No Merchants To Show [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-26 12:45:36,504 ERROR: Error occurred: Expecting value: line 1 column 1 (char 0) [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-26 12:46:31,717 ERROR: Error occurred: Expecting value: line 1 column 1 (char 0) [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-26 12:47:49,472 ERROR: Error occurred: Expecting value: line 1 column 1 (char 0) [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-26 12:53:12,027 ERROR: Error occurred: Expecting value: line 1 column 1 (char 0) [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-26 14:15:20,783 ERROR: Error occurred: Expecting value: line 1 column 1 (char 0) [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-26 14:19:46,886 ERROR: Error occurred: otp incorrect [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-26 15:59:57,876 ERROR: Error occurred: to_dict() missing 1 required positional argument: 'propagation' [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-26 16:00:10,539 ERROR: Error occurred: otp incorrect [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-26 17:27:32,533 ERROR: Error occurred: role_name already exists [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-27 11:38:31,942 ERROR: SQLAlchemy error occurred: (MySQLdb.OperationalError) (1054, "Unknown column 'bots.created_by' in 'field list'")
+[SQL: SELECT bots.id AS bots_id, bots.phone_id AS bots_phone_id, bots.bot_username AS bots_bot_username, bots.bot_name AS bots_bot_name, bots.bot_status AS bots_bot_status, bots.bot_description AS bots_bot_description, bots.bot_token AS bots_bot_token, bots.bot_approval_status AS bots_bot_approval_status, bots.created_by AS bots_created_by, bots.created_on AS bots_created_on, bots.updated_on AS bots_updated_on 
+FROM bots ORDER BY bots.id DESC 
+ LIMIT %s, %s]
+[parameters: (0, 10)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:60]
+2024-08-27 17:35:53,680 ERROR: Error occurred: name 'webhook' is not defined [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-28 12:12:52,732 ERROR: Error occurred: list indices must be integers or slices, not dict [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-28 12:12:54,162 ERROR: Error occurred: list indices must be integers or slices, not dict [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-28 12:12:58,271 ERROR: Error occurred: list indices must be integers or slices, not dict [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-28 13:11:49,157 ERROR: Error occurred: len() takes exactly one argument (2 given) [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-28 14:16:13,434 ERROR: Error occurred: No Merchants To Show [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-28 14:16:34,662 ERROR: Error occurred: 'Events' object has no attribute 'function_name' [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
+2024-08-28 14:16:43,750 ERROR: Error occurred: 'Events' object has no attribute 'function_name' [in /Users/adilanwar/Documents/tech_pay/tecpaybot/app/service/common/session_factory.py:71]
